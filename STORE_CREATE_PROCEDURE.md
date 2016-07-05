@@ -113,7 +113,15 @@ export default combineReducers({
 
 ### Store
  
+На основе скомбинированных редукторов создаем хранилище
  
+`store.js`
+```
+import { createStore } from 'redux';
+import reducers from './reducers/redusers';
+
+export default createStore(reducers);
+```
 
 
 
