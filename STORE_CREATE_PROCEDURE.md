@@ -87,9 +87,9 @@ const initialState = {
 const userReducer = function(state = initialState, action) {
     switch(action.type) {
         case types.GET_USERS_SUCCESS:
-            return {...state, users: action.payload);
+            return {...state, users: action.payload};
         case types.GET_USER_PROFILE_SUCCESS:
-            return {...state, userProfile: action.payload);
+            return {...state, userProfile: action.payload};
         // ...             
     }
     return state;
